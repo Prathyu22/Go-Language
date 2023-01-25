@@ -2,14 +2,14 @@ package main
 
 import "fmt"
 
+var a = 9 //this is package level variable declaration.
+
 func demo() {
-	//scope of the variable is limited to this function itself.
-	var a = 9
-	fmt.Println(a)
+	fmt.Println(a) //executes.
 }
 
 //functions
 func main() {
 	demo()
-	fmt.Println(a) // error occured since 'a' is undefined in this function.
+	fmt.Println(a) // now it executes without any error since varibale is declared in package level.
 }
