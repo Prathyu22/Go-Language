@@ -18,12 +18,13 @@ Data types :
 
 */
 func main() {
-	var num = 2
+	/*var num = 2
 	var num1 int = 3
 	var num2 int
-	num2 = 4
-	fmt.Println(num)
-	fmt.Println(num1)
-	fmt.Println(num2)
-	fmt.Print(num, num1, num2)
+	num2 = 4*/
+
+	var num, num1 int
+	num = 1
+	num1 = 2
+	fmt.Print(num, num1)
 }
