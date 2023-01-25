@@ -7,7 +7,7 @@ func main() {
 	// method2 for infinite loop
 	i := 1
 	for i <= 5 {
-		fmt.Println("Example")
+		fmt.Println("Example", i)
 		i++ // or i=i+1
 	}
 }
