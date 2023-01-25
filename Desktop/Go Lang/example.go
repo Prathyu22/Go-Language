@@ -8,5 +8,6 @@ func main() {
 	i := 1
 	for i <= 5 {
 		fmt.Println("Example")
+		i++ // or i=i+1
 	}
 }
