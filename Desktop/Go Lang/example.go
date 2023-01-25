@@ -2,11 +2,15 @@ package main
 
 import "fmt"
 
-// only one looping statement is available in "go language." --> "for"
-func main() {
-	// method2 for infinite loop
+func add(x int, y int) int {
+	var out = x + y
+	return out
+}
 
-	for i := 1; i <= 5; i++ {
-		fmt.Println("Example", i)
-	}
+//functions
+func main() {
+	num1 := 5
+	num2 := 6
+	result := add(num1, num2)
+	fmt.Println(result)
 }
