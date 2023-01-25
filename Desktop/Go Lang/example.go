@@ -1,14 +1,13 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
 func main() {
-
-	fmt.Println() // it doesn't show error.
-	fmt.toLarge() // it shows error.
-
-	// When we are using our in-built methods or libraries
-	// outside our package then we need to use them with capital letters.
-	// ---> Exported Names.
-
+	var num float64 = 9
+	fmt.Println("Example")
+	var result = math.Sqrt(num) // math.Sqrt() takes only float type numbers.
+	fmt.Println(result)
 }
