@@ -2,16 +2,14 @@ package main
 
 import "fmt"
 
-func calc(x, y int) (out, out1 int) {
-	out = x + y
-	out1 = x - y
-	return
+func demo() {
+	//scope of the variable is limited to this function itself.
+	var a = 9
+	fmt.Println(a)
 }
 
 //functions
 func main() {
-	num1 := 5
-	num2 := 6
-	result, result1 := calc(num1, num2)
-	fmt.Println(result, result1)
+	demo()
+	fmt.Println(a) // error occured since 'a' is undefined in this function.
 }
