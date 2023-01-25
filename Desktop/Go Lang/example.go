@@ -22,4 +22,5 @@ func main() {
 	default:
 		fmt.Println("Too far away.")
 	}
+	fmt.Println(time.Now()) // this gives todays's time along with date etc.
 }
