@@ -2,20 +2,24 @@
 
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 func main() {
-	num := 3
-
-	switch num {
-	case 1:
-		fmt.Println("One")
-	case 2:
-		fmt.Println("Two")
-	case 3:
-		fmt.Println("Three")
+	fmt.Println("When is Saturday ?")
+	today := time.Now().Weekday()
+	switch time.Saturday {
+	case today + 0:
+		fmt.Println("Today.")
+	case today + 1:
+		fmt.Println("Tomorrow.")
+	case today + 2:
+		fmt.Println("In two days.")
+	case today + 3:
+		fmt.Println("In three days.")
 	default:
-		fmt.Println("")
+		fmt.Println("Too far away.")
 	}
-
 }
