@@ -23,8 +23,7 @@ func main() {
 	var num2 int
 	num2 = 4*/
 
-	var num, num1 int
-	num = 1
-	num1 = 2
+	var num, num1 int //declaration
+	num, num1 = 2, 3  //initialization
 	fmt.Print(num, num1)
 }
