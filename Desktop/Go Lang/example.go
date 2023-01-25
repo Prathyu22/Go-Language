@@ -2,15 +2,16 @@ package main
 
 import "fmt"
 
-func add(x, y int) int {
+func calc(x, y int) (int, int) {
 	var out = x + y
-	return out
+	var out1 = x - y
+	return out, out1
 }
 
 //functions
 func main() {
 	num1 := 5
 	num2 := 6
-	result := add(num1, num2)
-	fmt.Println(result)
+	result, result1 := calc(num1, num2)
+	fmt.Println(result, result1)
 }
