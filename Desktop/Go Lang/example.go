@@ -18,6 +18,7 @@ Data types :
 
 */
 func main() {
-	num := 9 // var num int = 9
+	const num int = 9
+	num = 10 // error for reinitializing.
 	fmt.Print(num)
 }
