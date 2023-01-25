@@ -5,7 +5,7 @@ import "fmt"
 func calc(x, y int) (out, out1 int) {
 	out = x + y
 	out1 = x - y
-	return out, out1
+	return
 }
 
 //functions
