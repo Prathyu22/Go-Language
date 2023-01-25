@@ -18,12 +18,6 @@ Data types :
 
 */
 func main() {
-	/*var num = 2
-	var num1 int = 3
-	var num2 int
-	num2 = 4*/
-
-	var num, num1 int //declaration
-	num, num1 = 2, 3  //initialization
-	fmt.Print(num, num1)
+	num := 9 // var num int = 9
+	fmt.Print(num)
 }
